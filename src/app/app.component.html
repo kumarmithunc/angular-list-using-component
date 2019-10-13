@@ -1,0 +1,19 @@
+
+<p>
+  this example display list of items
+  , each item is diplayed using reusable component called layout component
+</p>
+<mat-divider></mat-divider>
+<mat-list>
+    <mat-list-item *ngFor="let item of simpleItems">
+      <layout [item] = 'item'></layout>
+    </mat-list-item>
+  </mat-list>
+<mat-divider></mat-divider>
+
+
+<mat-list>
+ <mat-list-item> Pepper </mat-list-item>
+ <mat-list-item> Salt </mat-list-item>
+ <mat-list-item> Paprika </mat-list-item>
+</mat-list>
